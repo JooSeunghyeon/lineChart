@@ -144,7 +144,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     ];
 
-    _lineSeriesCollectionDsimAPT = [ // 여기 데이터 활용중
+    _lineSeriesCollectionDsimAPT = [
+      // 여기 데이터 활용중
       _getChartData(
         data: jsonData_att2,
         color: Colors.red,
@@ -175,6 +176,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     ];
   }
+
+  bool co2Val = false;
 
   @override
   Widget build(BuildContext context) {

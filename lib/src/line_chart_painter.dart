@@ -354,6 +354,7 @@ class LineChartPainter extends CustomPainter {
                 10;
         double textY = size.height / 2 - (14.0 * (tips.length + 1) + 4) / 2;
 
+        // 클릭 할때 안에 글자 텍스트 부분
         double outOfBoundWidth = (textX - 4) +
             (rectWidth + 16) -
             (size.width - rightOffset) +
@@ -471,7 +472,7 @@ class LineChartPainter extends CustomPainter {
       List<DateValuePair> data = lineSeriesXCollection[i].dataList;
       if (data.isNotEmpty) {
         List<int> startIndex = lineSeriesXCollection[i].startIndexes;
-        double yStep = size.height / yRanges[i];
+        double yStep = size.height / yRanges[i]; // 안의 표시 되는 간격
         Path linePath = Path();
 
         Paint linePaint = Paint()

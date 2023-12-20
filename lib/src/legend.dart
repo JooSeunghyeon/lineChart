@@ -7,6 +7,7 @@ class Legend extends StatelessWidget {
 
   final List<LineSeriesX> lineSeriesXCollection;
 
+  // TODO 밑 동글뱅이 Screen
   @override
   Widget build(BuildContext context) {
     Widget buildTile({
